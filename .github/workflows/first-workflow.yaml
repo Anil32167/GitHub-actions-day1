@@ -1,4 +1,4 @@
-name: My First Workflow concurrency: 
+name: My First Workflow 
 
 on:
  push:
@@ -8,13 +8,12 @@ on:
 jobs:
   first-job:
     runs-on: ubuntu-latest
-
     steps:
-       - name: Say Hello 
-         run: echo "Hello from Hiqode"
+      - name: Say Hello 
+        run: echo "Hello from Hiqode"
 
-       - name: Show files
-         run: la -la
+      - name: Show files
+        run: la -la
 
-       - name: Show git version 
-        run: git --version 
+      - name: Show git version 
+        run: git --version
